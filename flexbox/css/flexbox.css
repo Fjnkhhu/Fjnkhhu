@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+/*導覽列設定*/
+body,ul{
+    margin: 0px;
+}
+
+header{
+    position: sticky;
+    padding: -webkit-sticky;
+    top:0;
+}
+
+nav{
+    background-color: blanchedalmond;
+}
+nav ul{
+    display: flex;
+    justify-content: right;
+}
+nav li{
+    list-style-type: none;
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+nav a:hover{
+    background-color: lightpink;
+    color: lightcyan;
+    transition: background-color 1s linear,color 1s ease-in;
+}
+
+/*標題列設定*/
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 235, 205,80%);
+}
+
+.title{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/*照片設定*/
+#photolist ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:0px;
+}
+
+#photolist li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+#photolist img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#photolist .emptyitem{
+    width:200px;
+}
+
+.gotop{
+    font-size: 60px;
+    color: aquamarine;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+}
